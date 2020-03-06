@@ -47,7 +47,8 @@ function normalizeName(name) {
   if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(name) || name === '') {
     throw new TypeError('Invalid character in header field name')
   }
-  return name.toLowerCase()
+  // return name.toLowerCase()
+  return name
 }
 
 function normalizeValue(value) {
